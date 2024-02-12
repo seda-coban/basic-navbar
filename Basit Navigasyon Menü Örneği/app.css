@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(255, 99, 71),rgb(27, 0, 255));
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+     display: inline-block; /*Hem satır hem de block düzeninde eleman için yapıldı */
+
+}
+
+nav ul li:not(:last-child){ /*Son çocuk nesnesine margin vermemek için Psuedo class kullanılmıştır. */
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: block; /* width ve heiht değeri verebilmek için yapıldı. */
+    height: 50px;
+    padding: 0 20px;
+    background-color: tomato;
+    color: bisque;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: 300ms all; /*İmlecin gezinirken yumuşaklık kazanması için yapılmıştır.*/
+}
+
+nav ul li a:hover{ /*Psuedo class kullanılmıştır.*/
+    background-color: blueviolet;
+}
